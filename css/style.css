@@ -8,24 +8,32 @@ body {
 }
 
 .resume {
-    margin: 5% 15%;
+    margin: 5% auto;
     width: 800px;
     height: 1000px;
-    background-color: rgb(230, 230, 230)
-}
-
-.resume img {
-    width: 100%;
-    height: 30%;
-    padding: 0px;
-    margin: 0px;
+    background-color: rgb(230, 230, 230);
+    box-shadow: -180px 25px 59px -3px rgba(0,0,0,0.34);
+    -webkit-box-shadow: -180px 25px 59px -3px rgba(0,0,0,0.34);
+    -moz-box-shadow: -180px 25px 59px -3px rgba(0,0,0,0.34);
 }
 
 h3 {
     margin: 0%;
     color: rgb(59, 165, 59);
 }
-
+h2, h1 {
+    color: white;
+    margin: 0%;
+    padding:9px 0 0 15px;
+    text-align: left;
+    z-index: 3;
+}
+h1 {
+    font-size:26px;
+}
+h2{
+    font-size: 17px;
+}
 hr{
     margin: 5px 0 20px 0;
 }
@@ -36,16 +44,45 @@ p {
 }
 
 /*left side*/
+.resume img {
+    z-index: 1;
+    width: 100%;
+    height: 30%;
+    padding: 0px;
+    margin: 0px;
+}
+.bggreen {
+    position: absolute;
+    width: 100%;
+    height:80px;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(59, 165, 59);
+    z-index: 2;
+    top: 240px;
+    filter: opacity(0.7);
+}
+
 /*contact*/
-a { 
+a:link { 
     text-decoration: none;
     color: rgb(230, 230, 230);
 }
+
+a:visited{
+    color:rgb(59, 165, 59);
+}
+a:hover {
+    color: yellow;
+}
+
 i {
     width: 20px;
     padding: 4px 10px 10px 4px;
     text-align: left;
 }
+
+/*left*/
 .leftCol .contact, .education, .skills{
     padding: 10% 10% 0 10%;
     text-align: left;
@@ -53,12 +90,25 @@ i {
 }
 
 .leftCol {
+    position: relative;
     width: 30%;
     float: left;
     background: rgb(70, 70, 70);
     height: 100%;
+    box-shadow: -30px 34px 60px 19px rgba(0,0,0,0.67);
+    -webkit-box-shadow: -30px 34px 60px 19px rgba(0,0,0,0.67);
+    -moz-box-shadow: -30px 34px 60px 19px rgba(0,0,0,0.67);
 }
 
+#progress1, #progress2, #progress3, #progress4 {  
+    background-color: rgb(59, 165, 59);
+    height: 10px;
+    width: 120px;
+}
+
+.progress {
+    padding: 0%;
+}
 
 
 /* right */
