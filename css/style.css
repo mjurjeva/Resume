@@ -16,10 +16,14 @@ body {
     -webkit-box-shadow: -180px 25px 59px -3px rgba(0,0,0,0.34);
     -moz-box-shadow: -180px 25px 59px -3px rgba(0,0,0,0.34);
 }
-
+form {
+    padding-top: 10px;
+}
 h3 {
     margin: 0%;
     color: rgb(59, 165, 59);
+    border-bottom: 1px solid black;
+    padding: 0 0 10px 0;
 }
 h2, h1 {
     color: white;
@@ -34,13 +38,11 @@ h1 {
 h2{
     font-size: 17px;
 }
-hr{
-    margin: 5px 0 20px 0;
-}
 
 p {
     margin: 0%;
     padding: 0%;
+    padding-top: 10px;
 }
 
 /*left side*/
@@ -101,13 +103,21 @@ i {
 }
 
 #progress1, #progress2, #progress3, #progress4 {  
-    background-color: rgb(59, 165, 59);
-    height: 10px;
-    width: 120px;
+    height: 15px;
+    width: 110px;
+    padding-top: 5px;
+    background: none;
 }
 
 .progress {
-    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 7px;
+    align-items: flex-start;
+}
+.prog {
+    padding-top: 10px;
 }
 
 
@@ -121,4 +131,8 @@ i {
 .rightCol .about, .experience, .reference {
     padding: 30px 30px 0 30px;
     text-align: left;
+}
+
+.reference1 {
+    padding-top: 10px;
 }
